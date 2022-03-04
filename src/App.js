@@ -12,6 +12,9 @@ function App() {
   const [varDoBuga] = useState("");
   console.log(varDoBuga);
 
+  const [varDoBuga2] = useState("");
+  console.log(varDoBuga2);
+
   async function fetchGreeting() {
     if (typeof window.ethereum !== "undefined") {
       const provider = new ethers.providers.Web3Provider(window.ethereum); // There are other providers to use: https://docs.ethers.io/v5/api/providers/
