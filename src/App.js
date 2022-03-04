@@ -9,6 +9,9 @@ const greeterAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Address 
 function App() {
   const [greeting, setGreetingValue] = useState("");
 
+  const [varDoBuga] = useState("");
+  console.log(varDoBuga);
+
   async function fetchGreeting() {
     if (typeof window.ethereum !== "undefined") {
       const provider = new ethers.providers.Web3Provider(window.ethereum); // There are other providers to use: https://docs.ethers.io/v5/api/providers/
